@@ -86,6 +86,8 @@ If I have time:
 
 Repository:
 - Move all files to repository
+- Folders
+- Add link to this repository in challenges document
 
 ## To-Do List
 
@@ -102,15 +104,14 @@ Diagrams:
 - 10
 - All diagrams are unified in theme
 
+Repository:
+- README.md- include title, subtitle, aims and steps as well as link and description of data source, my name and thanks yous (Matt Bell, Kyle Dexter, Claudia Colesie, teaching team of this Data Science course)
+- File names
+
+
 Final Draft:
 - Link to this repository
 - Final edit of explanatory text
-
-Repository:
-- README.md- include title, subtitle, aims and steps as well as link and description of data source, my name and thanks yous (Matt Bell, Kyle Dexter, Claudia Colesie, teaching team of this Data Science course)
-- Folders
-- File names
-- Add link to this repository in challenges document
 
 Final Formatting:
 - Create website repository (learn how to create website repository)
