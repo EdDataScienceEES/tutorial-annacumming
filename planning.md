@@ -84,6 +84,9 @@ Final Formatting:
 If I have time:
 - Make it clear somewhere that though I have used a dataset from a different course I have not copied their tutorial
 
+Repository:
+- Move all files to repository
+
 ## To-Do List
 
 Diagrams:
@@ -104,21 +107,19 @@ Final Draft:
 - Final edit of explanatory text
 
 Repository:
-- Move all files to repository
-- README.md- include title, subtitle, aims and steps as well as link and description of data source, my name and thanks yous
+- README.md- include title, subtitle, aims and steps as well as link and description of data source, my name and thanks yous (Matt Bell, Kyle Dexter, Claudia Colesie, teaching team of this Data Science course)
 - Folders
 - File names
 - Add link to this repository in challenges document
 
 Final Formatting:
-- Add a thank you section to those who taught you statistics you used here (Matt Bell, Kyle Dexter, Claudia Colesie, teaching team of this Data Science course)
 - Create website repository (learn how to create website repository)
 
 If I have time:
 - Ask for feedback from MJ
 
 Submission:
-- Happy with course repository
+- Happy with course repository- remove unneccessary files like this one
 - Submit on Learn!!!
 - And breath...
 
