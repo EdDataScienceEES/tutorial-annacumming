@@ -90,9 +90,6 @@ Linear regressions can only be applied to certain datasets as they have a few as
 - There is no error in the measurement of the explanatory variable
 - The response variable varies in a linear manner with respect to the explanatory variable
 
-This diagram illustrates what we mean by normally distributed residuals: <br/>
-*Diagram of normally distributed residuals for linear regression* <br/>
-
 ## 5. Testing the Assumptions of Linear Regressions
 We want to quantify the relationship between sand content (continuous) and total base saturation (continuous) so ideally we would run a linear regression but first we need to test that our data meets the assumptions. <br/>
 
@@ -184,7 +181,10 @@ This [link](https://rcompanion.org/handbook/I_12.html) provides more information
 <br/>
 Some datasets just won’t satisfy the assumptions of a linear model no matter how much data transformation you do. Luckily, there is a non-parametric alternative.<br/>
 <br/>
+If you find that your data doesn't meet the assumptions of your linear model you can always run one of the follwing non-parametric alternatives: <br/>
 *Diagram of flowchart for parametric vs non-parametric*
+
+Factor is another word for variable and levels refer to the number of treatments within that factor.
 
 ## 7. Non-Parametric Alternatives
 Why not save yourself the hassle of all this data transformation jiggery pokery and go straight for a non-parametric alternative? Well, non-parametric alternatives to linear models do not have parameters. <br/>
