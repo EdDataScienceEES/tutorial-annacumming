@@ -135,7 +135,7 @@ shapiro.test(soils$Total_Base_Saturation)
 ```
 <br/>
 If the p>0.05 then the residuals are normally distributed and your data meets one of the assumptions.<br/>
-*Diagram of Shapiro-Wilk output*<br/>
+<img src="https://user-images.githubusercontent.com/91271333/144334508-0dd5a202-bb21-48f4-a39a-4ce5f8016e8a.png" width="1500">
 <br/>
 Ours doesn’t but let’s see about the other assumptions. <br/>
 <br/>
@@ -153,19 +153,19 @@ plot(sand_TBS) # follow the instruction in the R console to view each plot
 ```
 
 The residuals vs fitted plot shows whether the relationship between our variables is linear. The line should be pretty straight but it doesn’t need to sit on the dotted line. <br/>
-*Diagram of residual vs fitted plot*
+<img src="https://user-images.githubusercontent.com/91271333/144334792-ecc48c74-44f2-4f73-aa91-d1ffb8f08f92.png" width="1500">
 Our plot doesn’t indicate the relationship between total base saturation and sand content is linear. <br/>
 <br/>
 If the residuals are normally distributed the points will sit on the dashed line. It is common and acceptable for the points to deviate slightly towards the extremes. <br/>
-*Diagram of QQ plot*
+<img src="https://user-images.githubusercontent.com/91271333/144334845-30d0e3df-aa14-4621-a5b4-0c2cf99603e3.png" width="1500">
 Ours deviate quite drastically I’m afraid. <br/>
 <br/>
 With the scale-location plot we are looking for equally (randomly) spread points around a somewhat horizontal line. <br/>
-*Diagram of scale-location plot*
+<img src="https://user-images.githubusercontent.com/91271333/144334921-70410f41-3a2d-4ad1-8966-3ffd287b2f0c.png" width="1500">
 Once again, we are not finding this pattern. <br/>
 <br/>
 The residuals vs leverage plot helps us find out which outliers are influential in the linear regression analysis. Values in the upper or lower left of the plot indicate issues if they are shown with Cook’s distance lines. Patterns are not relevant here. <br/>
-*Diagram of residuals vs leverage plot*
+<img src="https://user-images.githubusercontent.com/91271333/144334967-7575d4a8-2440-44ff-b636-61daca9a56d7.png" width="1500">
 At least this plot shows we don’t have any influential outliers. <br/>
 <br/>
 But in conclusion, not even close… <br/>
@@ -178,7 +178,7 @@ Transform your data based on what you see when you produce a histogram of the di
 ```
 hist(soils$Total_Base_Saturation)  # plot the distribution of total base saturation 
 ```
-*Diagram of histogram of response variable* <br/>
+<img src="https://user-images.githubusercontent.com/91271333/144334702-028f232e-15f9-4046-b34f-02ca34ca9750.png" width="1500">
 <br/>
 This [link](https://rcompanion.org/handbook/I_12.html) provides more information on how to transform your data based on the distribution it currently shows. Generally you start by only transforming your response variable but you might find that transforming both will give you a closer to normal distribution. Just remember that the outputs of your statistical test will reflect the relationship between the transformed variables and not the ones in your prediction. It might be best to [back-transform](http://www.biostathandbook.com/transformation.html) your data and make a statement in your results based on that so it is immediately clear to your reader whether your predictions were correct and it is easy for them to relate that to the bigger picture significance of your study.
 <br/>
@@ -214,11 +214,11 @@ These are the results from our liner regression: <br/>
 <br/>
 *Diagram of annotated results table screen grab for linear regression* 
 <br/>
-The F statistic is not vital to interpreting results in this context. What really want to know is the p-value.
+The F statistic, p-value and estimate for sand (gradient) are value which should be reported in your results. The F statistic is not vital to interpreting the outcome in this context. What really want to know is the p-value.
 <br/>
 #### ***What is a p-value?***
 Linear models are technically used to disprove the null hypothesis rather than prove your hypothesis. Expected values are generated based on the null hypothesis and then the probability of you gaining the results you did if the null hypothesis were true is represented as a p-value. The arbitrary but standard threshold for significance is p<0.05. If the p-value is less than 0.05, the probability of obtaining the results you did if the null hypothesis were true is less than 5%. The idea being that you are very unlikely to have observed the relationship you did by chance and therefore the relationship you observed is more likely to reflect that of the true relationship between your chosen variables than the null hypothesis is. <br/>
-*Diagram of what a p-value is* <br/>
+<img src="https://user-images.githubusercontent.com/91271333/144335648-5c753df4-5420-4dbf-ae72-7719683c2c41.png" width="1500">
 <br/>
 #### ***What is R<sup>2</sup>***
 The R2 value is a measure of how much variation in the response variable is due to your explanatory variable. An R2 value of 1 means all observed values fall on the regression line whereas 0 means the opposite. A high R2 value therefore tell you the explanatory power of your model is high and will make predictions that are more accurate.
@@ -227,9 +227,9 @@ R2 is less important if you do not want to use your model for predictions and ju
 <br/>
 These are the results from our Spearman’s rank correlation:<br/>
 <br/>
-*Diagram of annotated results table screen grab for Spearman’s rank correlation* <br/>
+<img src="https://user-images.githubusercontent.com/91271333/144335575-6cfa6a9b-24c9-493f-b023-0a3b5748c23d.png" width="1500">
 <br/>
-Note that the Spearman’s rank correlation provides you with much less detail as to the nature of the relationship between total base saturation and sand content. <br/>
+Only the rho and p-value are reported. The rho value will equal zero if the explanatory variable has no effect on the response. It can range from -1 to 1 with the negative and psitive values indicating the nature of the relationship. Note that the Spearman’s rank correlation provides you with much less detail as to the nature of the relationship between total base saturation and sand content. <br/>
 <br/>
 R can also help you interpret the results of your linear regression but not your Spearman’s rank correlation (report says it can but it’s lying). <br/>
 <br/>
@@ -239,7 +239,7 @@ R can also help you interpret the results of your linear regression but not your
 report(linear_regression) # produce a statement describing outputs 
 ```
 <br/>
-*outputs from report()*
+<img src="https://user-images.githubusercontent.com/91271333/144335714-0157c593-cdb9-487e-81c1-155d726c147e.png" width="1500">
 
 ## Visualising the Relationship between Conitnuous Variables
 Both the linear regression and the Spearman’s rank correlation can be displayed using scatter plots because you are trying to demonstrate the same relationship. Just add the equation of the linear regression to one plot and the Spearman coefficient (rho) and its associated p-value to the other. <br/>
@@ -278,6 +278,12 @@ ggsave(file = "graphics/spearman_plot.jpg",  # name and location of plot
        width = 12,
        height = 8)  # save plot as JPEG with these dimensions
  ```
+ 
+This is our linear model plot:
+<img src="https://user-images.githubusercontent.com/91271333/144335840-d9aebafa-911a-4a69-ac68-c3a2c23e1847.png" width="1500">
+
+Here is our plot for the Spearman's rank correlation:
+<img src="https://user-images.githubusercontent.com/91271333/144335807-b0d8cd56-3c99-4905-b36c-1ffadc02e829.png" width="1500">
     
 ## 10. Presenting Your Results
 The results of your statistical test should not be presented as a list or table of (frankly bland) numbers that your reader has to go through and interpret. You have already interpreted their meaning so you can make a clear, concise statement about what they show. This statement should be in basic language, there is no need for complicated scientific jargon. It should describe the relationship you found in terms of your response and explanatory variables and whether or not you found that relationship to be significant. The outputs of your statistical test are just put in brackets at the end of the sentence so your reader knows the justification for that statement. <br/>
