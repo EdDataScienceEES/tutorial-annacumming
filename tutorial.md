@@ -169,7 +169,8 @@ The residuals vs leverage plot helps us find out which outliers are influential 
 At least this plot shows we don’t have any influential outliers. <br/>
 <br/>
 But in conclusion, not even close… <br/>
-*Gif of Blackadder quote*
+<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F484066659929371412%2F&psig=AOvVaw3l0FQDKuQ8tR9MO6k4_y17&ust=1638491541125000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNDJ0-Tuw_QCFQAAAAAdAAAAABAD" width="40" height="40" />
+
 Don’t give up though.
 
 ## 6. Transforming your Data to Match Linear Regression Assumptions 
@@ -288,7 +289,7 @@ Here is our plot for the Spearman's rank correlation:
 ## 10. Presenting Your Results
 The results of your statistical test should not be presented as a list or table of (frankly bland) numbers that your reader has to go through and interpret. You have already interpreted their meaning so you can make a clear, concise statement about what they show. This statement should be in basic language, there is no need for complicated scientific jargon. It should describe the relationship you found in terms of your response and explanatory variables and whether or not you found that relationship to be significant. The outputs of your statistical test are just put in brackets at the end of the sentence so your reader knows the justification for that statement. <br/>
 <br/>
-For our example we would say: “We found that the total base saturation (%) of the soil decreased with sand content (%) (Spearman’s rank correlation, rR<sub>S</sub> = 0.58 , p = 0.002) . <br/>
+For our example we would say: “We found that the total base saturation (%) of the soil decreased with sand content (%) (Spearman’s rank correlation, R<sub>S</sub> = 0.58 , p = 0.002) . <br/>
 <br/>
 If we were to present the results of our linear regression (which are not valid!) we would do it like so: (linear regression, FR<sub>1,23</sub> = 17.29, p < 0.001). <br/>
 <br/>
