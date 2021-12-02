@@ -34,8 +34,8 @@ This tutorial is aimed at coders who have done the following Coding Club tutoria
 9. Visualising the Relationship Between Continuous Variables 
 10. Presenting Your Results 
 
-<hr>
-All the files you need to complete this tutorial can be downloaded from this repository. Clone and download the repo as a zip file, then unzip it.
+
+All the files you need to complete this tutorial can be downloaded from [this repository](https://github.com/EdDataScienceEES/tutorial-annacumming.git). Clone and download the repo as a zip file, then unzip it.
 <hr>
 
 ## 1. Basics of Experimental Design
