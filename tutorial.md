@@ -169,8 +169,7 @@ The residuals vs leverage plot helps us find out which outliers are influential 
 At least this plot shows we don’t have any influential outliers. <br/>
 <br/>
 But in conclusion, not even close… <br/>
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F484066659929371412%2F&psig=AOvVaw3l0FQDKuQ8tR9MO6k4_y17&ust=1638491541125000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNDJ0-Tuw_QCFQAAAAAdAAAAABAD" width="40" height="40" />
-
+<img src="https://user-images.githubusercontent.com/91271333/144337315-7b2b071b-25a4-4e1b-9ee8-1627cf020953.gif" width="400" height="400" />  <br/>
 Don’t give up though.
 
 ## 6. Transforming your Data to Match Linear Regression Assumptions 
@@ -190,7 +189,7 @@ Some datasets just won’t satisfy the assumptions of a linear model no matter h
 ## 7. Non-Parametric Alternatives
 Why not save yourself the hassle of all this data transformation jiggery pokery and go straight for a non-parametric alternative? Well, non-parametric alternatives to linear models do not have parameters. <br/>
 <br/>
-Obviously gif from Harry Potter- https://c.tenor.com/ewWvv0_ZTPMAAAAC/obviously-snape.gif
+<img src="https://user-images.githubusercontent.com/91271333/144337846-0497fdc8-0346-432e-8156-6cefadc854b1.gif" width="400" height="400" />  <br/>
 <br/>
 This makes them less desirable because you cannot quantify the relationship between your response and explanatory variables as clearly and they have less statistical power. You can visualize your data as a scatter plot and gain an idea that way. One benefit of the lack of parameters means that you don’t have to think about back-transforming if you decided to keep your data log transformed.<br/>
 <br/>
