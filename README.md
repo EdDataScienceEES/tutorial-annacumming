@@ -34,4 +34,6 @@ This tutorial is aimed at coders who have done the following Coding Club tutoria
 9. Visualising the Relationship Between Continuous Variables 
 10. Presenting Your Results 
 
-The website version of this tutorial can be found here.
+<hr>
+The index.md file provides instructions for this tutorial and there is an R script to accompany this. Folder containing the graphical outputs and data are also included.
+The website version of this tutorial can be found here https://eddatascienceees.github.io/tutorial-annacumming/
