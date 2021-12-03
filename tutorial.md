@@ -65,7 +65,7 @@ Going through these steps will make it more likely that you will gain a signific
 ## 2. Choosing a Statistical Test
 This table describes how you choose your statistical test based on the nature (continuous or categorical) of your response and explanatory variables. Categorical variables can be split into discrete categories whereas data points on continuous variables are not categorized based on being either one thing or another but can sit anywhere along a continuum. For instance, if you are collecting data on eye colour, this would be a categorical variable because you would have people with blue or green or brown eyes. (Of course, you could say there are people with green-ish blue eyes but for the sake of this tutorial let’s not make things needlessly complicated.) But if you measured human height these data points would span a range of values and therefore be a continuous variable. <br/>
 <br/>
-<img src="https://user-images.githubusercontent.com/91271333/144341530-1ca26509-36a7-4222-aef3-70c575934122.png" width="1500"> <br/>
+<img src="https://user-images.githubusercontent.com/91271333/144568709-520c11d2-09cd-4098-b301-7fd2568b0bcd.png" width="1500"> <br/>
 <br/>
 ## 3. Linear Models
 #### ***What is a linear model?*** 
@@ -130,7 +130,7 @@ shapiro.test(soils$Total_Base_Saturation)
 ```
 If the p>0.05 then the residuals are normally distributed and your data meets one of the assumptions.<br/>
 <br/>
-<img src="https://user-images.githubusercontent.com/91271333/144334508-0dd5a202-bb21-48f4-a39a-4ce5f8016e8a.png" width="1500"> <br/>
+<img src="https://user-images.githubusercontent.com/91271333/144569561-ac952b71-2119-406a-ae56-7cc48f6a6ac0.png" width="1500"> <br/>
 <br/>
 Ours doesn’t but let’s see about the other assumptions. <br/>
 <br/>
@@ -147,25 +147,25 @@ sand_TBS <- lm(Total_Base_Saturation~Sand, data=soils)  # run linear regression
 plot(sand_TBS) # follow the instruction in the R console to view each plot
 ```
 The residuals vs fitted plot shows whether the relationship between our variables is linear. The line should be pretty straight but it doesn’t need to sit on the dotted line. <br/> <br/>
-<img src="https://user-images.githubusercontent.com/91271333/144334792-ecc48c74-44f2-4f73-aa91-d1ffb8f08f92.png" width="1500"> <br/>
+<img src="https://user-images.githubusercontent.com/91271333/144569353-5fddcd37-6893-4235-b6a2-e4720d80caef.png" width="1500"> <br/>
 <br/>
 Our plot doesn’t indicate the relationship between total base saturation and sand content is linear. <br/>
 <br/>
 If the residuals are normally distributed the points will sit on the dashed line. It is common and acceptable for the points to deviate slightly towards the extremes. <br/>
 <br/>
-<img src="https://user-images.githubusercontent.com/91271333/144334845-30d0e3df-aa14-4621-a5b4-0c2cf99603e3.png" width="1500"> <br/>
+<img src="https://user-images.githubusercontent.com/91271333/144569174-8a352950-4810-475d-98ee-35b8d1c08c80.png" width="1500"> <br/>
 <br/>
 Ours deviate quite drastically I’m afraid. <br/>
 <br/>
 With the scale-location plot we are looking for equally (randomly) spread points around a somewhat horizontal line. <br/>
 <br/>
-<img src="https://user-images.githubusercontent.com/91271333/144334921-70410f41-3a2d-4ad1-8966-3ffd287b2f0c.png" width="1500"> <br/>
+<img src="https://user-images.githubusercontent.com/91271333/144569494-a127b2f2-4279-4191-bcd7-fa1b28f12297.png" width="1500"> <br/>
 <br/>
 Once again, we are not finding this pattern. <br/>
 <br/>
 The residuals vs leverage plot helps us find out which outliers are influential in the linear regression analysis. Values in the upper or lower left of the plot indicate issues if they are shown with Cook’s distance lines. Patterns are not relevant here. <br/>
 <br/>
-<img src="https://user-images.githubusercontent.com/91271333/144334967-7575d4a8-2440-44ff-b636-61daca9a56d7.png" width="1500"> <br/>
+<img src="https://user-images.githubusercontent.com/91271333/144569413-be6a1d7c-831b-43a6-985c-417c0448130d.png" width="1500"> <br/>
 <br/>
 At least this plot shows we don’t have any influential outliers. <br/>
 <br/>
@@ -181,7 +181,7 @@ Transform your data based on what you see when you produce a histogram of the di
 ```
 hist(soils$Total_Base_Saturation)  # plot the distribution of total base saturation 
 ```
-<img src="https://user-images.githubusercontent.com/91271333/144334702-028f232e-15f9-4046-b34f-02ca34ca9750.png" width="1500"> <br/>
+<img src="https://user-images.githubusercontent.com/91271333/144568837-4b07c328-0554-4c6f-adae-be4581d2e2b2.png" width="1500"> <br/>
 <br/>
 This [link](https://rcompanion.org/handbook/I_12.html) provides more information on how to transform your data based on the distribution it currently shows. Generally you start by only transforming your response variable but you might find that transforming both will give you a closer to normal distribution. Just remember that the outputs of your statistical test will reflect the relationship between the transformed variables and not the ones in your prediction. It might be best to [back-transform](http://www.biostathandbook.com/transformation.html) your data and make a statement in your results based on that so it is immediately clear to your reader whether your predictions were correct and it is easy for them to relate that to the bigger picture significance of your study.
 <br/>
@@ -189,7 +189,7 @@ Some datasets just won’t satisfy the assumptions of a linear model no matter h
 <br/>
 If you find that your data doesn't meet the assumptions of your linear model you can always run one of the follwing non-parametric alternatives: <br/>
 <br/>
-<img src="https://user-images.githubusercontent.com/91271333/144341597-221fffcb-989f-4e45-94a5-99688e3582bc.png" width="1500"> <br/>
+<img src="https://user-images.githubusercontent.com/91271333/144568583-8a41df62-f43c-4943-9e35-4b0b2c957c72.png" width="1500"> <br/>
 <br/>
 Factor is another word for variable and levels refer to the number of treatments within that factor. <br/>
 <br/>
@@ -218,7 +218,7 @@ cor.test(soils$Sand, soils$Total_Base_Saturation, data=soils,
 ## 9. Interpreting Your Results
 These are the results from our linear regression: <br/>
 <br/>
-<img src="https://user-images.githubusercontent.com/91271333/144335648-5c753df4-5420-4dbf-ae72-7719683c2c41.png" width="1500"> <br/>
+<img src="https://user-images.githubusercontent.com/91271333/144568979-fd452609-80d7-445c-a552-0797b5419a9b.png" width="1500"> <br/>
 <br/>
 The F statistic, p-value and estimate for sand (gradient) are value which should be reported in your results. The F statistic is not vital to interpreting the outcome in this context. What really want to know is the p-value. <br/>
 <br/>
@@ -230,7 +230,7 @@ The R<sup>2</sup> value is a measure of how much variation in the response varia
 <br/>
 These are the results from our Spearman’s rank correlation:<br/>
 <br/>
-<img src="https://user-images.githubusercontent.com/91271333/144335575-6cfa6a9b-24c9-493f-b023-0a3b5748c23d.png" width="1500"> <br/>
+<img src="https://user-images.githubusercontent.com/91271333/144570136-bd90d6a0-0958-423b-8a6c-aeed36cfb869.png" width="1500"> <br/>
 <br/>
 Only the rho and p-value are reported. The rho value will equal zero if the explanatory variable has no effect on the response. It can range from -1 to 1 with the negative and positive values indicating the nature of the relationship. Note that the Spearman’s rank correlation provides you with much less detail as to the nature of the relationship between total base saturation and sand content. <br/>
 <br/>
@@ -243,7 +243,7 @@ R can also help you interpret the results of your linear regression but not your
 report(linear_regression) # produce a statement describing outputs 
 ```
 <br/>
-<img src="https://user-images.githubusercontent.com/91271333/144335714-0157c593-cdb9-487e-81c1-155d726c147e.png" width="1500"> <br/>
+<img src="https://user-images.githubusercontent.com/91271333/144569292-d99dba19-a3ef-4a10-a7e3-ea40648ff901.png" width="1500"> <br/>
 
 ## 10. Visualising the Relationship between Conitnuous Variables
 Both the linear regression and the Spearman’s rank correlation can be displayed using scatter plots because you are trying to demonstrate the same relationship. Just add the equation of the linear regression to one plot and the Spearman coefficient (rho) and its associated p-value to the other. <br/>
@@ -284,11 +284,11 @@ ggsave(file = "graphics/spearman_plot.jpg",  # name and location of plot
  ```
 This is our linear model plot: <br/>
 <br/>
-<img src="https://user-images.githubusercontent.com/91271333/144335840-d9aebafa-911a-4a69-ac68-c3a2c23e1847.png" width="1500"><br/>
+<img src="https://user-images.githubusercontent.com/91271333/144569072-760cf491-ac9b-4ac2-b8c2-d037e9c65238.png" width="1500"><br/>
 <br/>
 Here is our plot for the Spearman's rank correlation:<br/>
 <br/>
-<img src="https://user-images.githubusercontent.com/91271333/144335807-b0d8cd56-3c99-4905-b36c-1ffadc02e829.png" width="1500"><br/>
+<img src="https://user-images.githubusercontent.com/91271333/144570477-007bc830-3d19-445a-b9b6-ac73865103c9.png" width="1500"><br/>
 <br/>
 ## 10. Presenting Your Results
 The results of your statistical test should not be presented as a list or table of (frankly bland) numbers that your reader has to go through and interpret. You have already interpreted their meaning so you can make a clear, concise statement about what they show. This statement should be in basic language, there is no need for complicated scientific jargon. It should describe the relationship you found in terms of your response and explanatory variables and whether or not you found that relationship to be significant. The outputs of your statistical test are just put in brackets at the end of the sentence so your reader knows the justification for that statement. <br/>
