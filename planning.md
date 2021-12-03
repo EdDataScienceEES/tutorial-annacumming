@@ -108,9 +108,8 @@ Repository:
 - README.md- include title, subtitle, aims and steps as well as link and description of data source, my name and thanks yous (Matt Bell, Kyle Dexter, Claudia Colesie, teaching team of this Data Science course)
 - File names
 
-
 Final Draft:
-- Link to this repository
+- Replace image links with those in correct filepath
 - Final edit of explanatory text
 
 Final Formatting:
