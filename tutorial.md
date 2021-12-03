@@ -300,3 +300,6 @@ If we were to present the results of our linear regression (which are not valid!
 Note that the outputs of the statistical analysis are in the format (name of statistical test, test statistic<sub>degrees of freedom</sub>, p value =…) and when the p value has more than three decimal places we say less than 0.001. <br/>
 <br/>
 Always refer to your plots somewhere in text. Either by saying “Figure 1 shows…” or by referring to the figure in brackets at the end of a sentence “…(Figure 1)”.
+
+# Closing Thoughts
+Well done! You have completed this tutorial. Hopefully you feel like you have achieved the aims and that doing so will help you incorporate statiistical analysis into your experimental design with ease in the future. The challenge now is to apply this to an experiment of your own.
